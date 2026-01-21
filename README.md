@@ -30,7 +30,7 @@ rmlint \
   --no-hardlinked \
   /dirtoscan/
 
-sudo mv ~/rmlint.json /srv/GMT_DATA/rmlint.json \
+&& sudo mv ~/rmlint.json /srv/GMT_DATA/rmlint.json \
 && sudo chown alvaro:alvaro /srv/GMT_DATA/rmlint.json \
 && sudo chmod 660 /srv/GMT_DATA/rmlint.json
 ```
