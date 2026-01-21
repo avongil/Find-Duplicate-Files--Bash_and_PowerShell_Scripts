@@ -1,3 +1,24 @@
+# Find-Duplicate-Files---Bash-Script
+there is now a linux version of this script:
+
+
+Bash script example:
+
+
+sudo ./find-duplicates.sh \
+    -p /srv \
+    -x /srv/GMT_DATA/Cobian_Incremental_NextcloudGMT_Backup \
+    -m nands \
+    -d 3 \
+    -e /srv/GMT_DATA/duplicates_bash.csv \
+&& sudo chown alvaro:alvaro /srv/GMT_DATA/duplicates_bash.csv \
+&& sudo chmod 660 /srv/GMT_DATA/duplicates_bash.csv
+
+
+
+
+
+
 # Find-Duplicate-Files---PowerShell-Script
 Finds duplicate files and writes a CSV file so you can delete them manually
 
