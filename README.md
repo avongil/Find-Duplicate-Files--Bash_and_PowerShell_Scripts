@@ -24,15 +24,17 @@ sudo apt install --no-install-recommends rmlint
 ```
 
 ```bash
-rmlint \
+sudo rmlint \
   -b \
   -F \
   --no-hardlinked \
-  /dirtoscan/
-
+  /srv \
+&& sudo mv ~/rmlint.sh /srv/GMT_DATA/rmlint.sh \
+&& sudo chown alvaro:shared /srv/GMT_DATA/rmlint.sh \
+&& sudo chmod 665 /srv/GMT_DATA/rmlint.sh \
 && sudo mv ~/rmlint.json /srv/GMT_DATA/rmlint.json \
-&& sudo chown alvaro:alvaro /srv/GMT_DATA/rmlint.json \
-&& sudo chmod 660 /srv/GMT_DATA/rmlint.json
+&& sudo chown alvaro:shared /srv/GMT_DATA/rmlint.json \
+&& sudo chmod 665 /srv/GMT_DATA/rmlint.json
 ```
 
 
